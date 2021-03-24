@@ -1,0 +1,81 @@
+.company-heading h1 {
+    margin-bottom: 40px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 700 !important;
+    text-align: center;
+}
+
+.company-heading h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100 !important;
+    text-transform: capitalize;
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.company-sections h2,
+.careers-sections h2,
+.perks-section h2 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.company-sections h2,
+.company-sections h3,
+.careers-sections h2 {
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.company-sections h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 14px 0;
+    font-family: 'proxima-nova', sans-serif;
+    text-transform: capitalize;
+}
+
+.red-border {
+    width: 50%;
+    border-bottom: 1px solid #d2282e;
+    margin: 0 auto;
+    height: 16px;
+}
+
+.blueish-border {
+    width: 50%;
+    border-bottom: 1px solid #4c40b3;
+    margin: 10px auto;
+    height: 16px;
+}
+
+.ct-u-size22 {
+    font-size: 22px;
+}
+
+.ct-u-fontWeight300 {
+    font-weight: 300;
+}
+
+.marginTop40 {
+    margin-top: 40px !important;
+}
+
+.ct-u-paddingBoth100 {
+    padding: 100px 15px;
+}
+
+.company-sections {
+    text-align: center;
+}
+
+
+.company-sections h2 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.company-sections h2,
+.company-sections h3 {
+    font-family: 'proxima-nova', sans-serif;
+}

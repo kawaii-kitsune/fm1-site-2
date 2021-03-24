@@ -1,0 +1,189 @@
+body {
+    height: 100%;
+    background-color: #516357;
+    background-image: url("/assets/concrete-wall-2.png");
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+#chat-div {
+    z-index: 10000;
+    position: fixed;
+    top: 20%;
+    bottom: 50%;
+
+}
+
+#chat-card {
+    z-index: 2;
+    bottom: 25%;
+    position: fixed;
+    height: 550px;
+    width: 550px;
+    transition: 0.5ms;
+    display: none;
+}
+
+#chat-svg {
+    z-index: 11000;
+    bottom: 50%;
+    position: fixed;
+}
+
+#chat-svg svg:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+
+
+/* h1*/
+h1 {
+    font-size: 10vw;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    position: relative;
+    font-weight: 900;
+}
+
+.wrapper {
+
+    align-content: center;
+
+}
+
+.wrapper h1 {
+    color: #fbe6d3;
+    text-transform: uppercase;
+
+    text-align: center;
+    text-shadow: -1px -1px 0 #3e2e6a, 1px -1px 0 #3e2e6a, -1px 1px 0 #3e2e6a, 1px 1px 0 #3e2e6a;
+}
+
+.wrapper h1:after {
+    content: attr(data-heading);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    /* overflow: hidden; */
+    color: #f3576c;
+    transform: translate(0.4vw, 0.3vh);
+    mix-blend-mode: darken;
+    text-align: center;
+    width: 100%;
+
+    text-shadow: 1px 0px 0px #3e2e6a,
+        0px 1px 0px #130b52,
+        2px 1px 0px #3e2e6a,
+        1px 2px 0px #130b52,
+        3px 2px 0px #3e2e6a,
+        2px 3px 0px #130b52,
+        4px 3px 0px #3e2e6a,
+        3px 4px 0px #130b52,
+        5px 4px 0px #3e2e6a,
+        4px 5px 0px #130b52,
+        6px 5px 0px #3e2e6a,
+        5px 6p
+}
+
+.masthead {
+    padding: 6em 0;
+    border-top: transparent;
+
+}
+
+#mainNav {
+    width: 100%;
+
+}
+
+session {
+    top: 0;
+    padding-top: 0;
+    position: relative;
+    margin: 0;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+#sbmt_button {
+    font-family: Hack, monospace;
+    background: #0F0F6D;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 1.5rem;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+}
+
+#sbmt_button::after {
+    content: "";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    position: absolute;
+    left: 85%;
+    top: 31%;
+    right: 5%;
+    bottom: 0;
+    opacity: 0;
+}
+
+#sbmt_button:hover {
+    background: #2b2bff;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px #0000ff61;
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+}
+
+#sbmt_button:hover::after {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+/* breakpoints */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #cool-text {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 749px) {
+    #cool-text {
+        display: none;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    /* #nav-icon {
+        display: none;
+    } */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}
