@@ -1,0 +1,367 @@
+.smallplayer {
+    width: 450px;
+    height: 190px;
+    background: rgb(34, 33, 33);
+    box-shadow: 0 30px 20px -20px #000;
+
+    position: relative;
+    /* left: 50%;
+    top: 50%; */
+    /* margin: -87px 0 0 -300px; */
+    border-radius: 87px 87px 87px 87px;
+
+}
+
+/* Left Icon */
+.smallplayer .left_icon {
+
+    height: 175px;
+    width: 175px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 87px 0 0 87px;
+}
+
+.smallplayer .left_icon .shadow {
+    height: 175px;
+    width: 50px;
+    position: absolute;
+    left: 80px;
+    top: 0;
+    border-radius: 10px 00px 0px 10px;
+
+    -webkit-box-shadow: inset 50px 0 50px -50px rgba(0, 0, 0, .5), -5px 0 0 #95c5bb, -10px 0 5px -5px rgba(255, 255, 255, .2);
+    box-shadow: inset 50px 0 50px -50px rgba(0, 0, 0, .5), -5px 0 0 #95c5bb, -10px 0 5px -5px rgba(255, 255, 255, .2);
+}
+
+.smallplayer .left_icon .btn {
+    width: 30px;
+    height: 30px;
+
+    background: rgb(34, 33, 33);
+    background: -webkit-linear-gradient(#173b18, #262c2b);
+    background: -moz-linear-gradient(#173b18, #293130);
+    background: -o-linear-gradient(#173b18, #2b2f2f);
+    background: -ms-linear-gradient(#173b18, #566865);
+    background: linear-gradient(#586d68, #081a17);
+    position: absolute;
+    left: 35px;
+    top: 110px;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 -2px 0px 1px #173b18, 0 0 0px 2px #173b18;
+
+    box-shadow: 0 30px 20px -20px #000;
+}
+
+.smallplayer .left_icon .light {
+    width: 5px;
+    height: 5px;
+    background: #173b18;
+    position: absolute;
+    left: 18px;
+    top: 8px;
+    border-radius: 50%;
+
+    -webkit-box-shadow: inset -1px -1px 3px 1px red, 0 0 5px red;
+    box-shadow: inset -1px -1px 3px 1px red, 0 0 5px red;
+}
+
+.smallplayer .left_icon .cord_container {
+    width: 75px;
+    height: 25px;
+    position: absolute;
+    top: 120px;
+    left: 65px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.smallplayer .left_icon .cord {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: -35px;
+    top: -105px;
+    border: 2px solid #132214;
+
+    -webkit-box-shadow: 0 0 0 2px #173b18;
+    box-shadow: 0 0 0 2px #173b18;
+    border-radius: 50%;
+}
+
+.smallplayer .left_icon .reader {
+    width: 20px;
+    height: 10px;
+
+    background: -webkit-linear-gradient(#173b18, #7c9d91);
+    background: -moz-linear-gradient(#132214, #173b18);
+    background: -o-linear-gradient(#132214, #173b18);
+    background: -ms-linear-gradient(#132214, #173b18);
+    background: linear-gradient(#132214, #173b18);
+    position: absolute;
+    top: 110px;
+    left: 130px;
+    border-radius: 2px;
+
+    -webkit-box-shadow: 6px 0 0 -4px #132214;
+    box-shadow: 6px 0 0 -4px v;
+    z-index: 1;
+
+    -webkit-transform: rotate(-55deg);
+    -moz-transform: rotate(-55deg);
+    -o-transform: rotate(-55deg);
+    -ms-transform: rotate(-55deg);
+    transform: rotate(-55deg);
+}
+
+.smallplayer .left_icon .lp_cont {
+    width: 95px;
+    height: 170px;
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    margin: -85px 0;
+    overflow: hidden;
+}
+
+.smallplayer .left_icon .lp {
+    width: 160px;
+    height: 160px;
+    background: #fb4949;
+    position: absolute;
+    top: 50%;
+    margin: -80px -70px;
+    border-radius: 50%;
+
+    -webkit-box-shadow: inset 0 0 0 2px #ce7777, inset 0 0 0 4px #fa4442, inset 0 0 0 6px #fa4443, inset 0 0 0 8px #fa4442, inset 0 0 0 9px #fa4441, inset 0 0 0 10px #fa4442, inset 0 0 0 11px #fa4441, inset 0 0 0 12px #fa4442, inset 0 0 0 13px #fa4441, inset 0 0 0 14px #fa4442, inset 0 0 0 15px #fa4441, inset 0 0 0 16px #fa4442, inset 0 0 0 17px #fa4441, inset 0 0 0 18px #fa4442, inset 0 0 0 19px #fa4441, inset 0 0 0 20px #fa4442, inset 0 0 0 21px #fa4441, inset 0 0 0 22px #fa4442, inset 0 0 0 23px #fa4441, inset 0 0 0 24px #fa4442, inset 0 0 0 25px #fa4441, inset 0 0 0 26px #c04633, inset 0 0 0 27px #ce4225, inset 0 0 0 28px #c73b25, inset 0 0 0 29px #c24329, inset 0 0 0 30px #d4442d, inset 0 0 0 31px #c5614d, inset 0 0 0 32px #ee361a, inset 0 0 0 33px #d83313, inset 0 0 0 34px #ee3d22, inset 0 0 0 35px #e25c41, inset 0 0 0 37px #953d3d, inset 0 0 0 39px #d36e5f, inset 0 0 0 59px #ce4444, inset 0 0 0 67px #e3e3e3, inset 0 0 4px 67px #888, inset 0 0 0 100px #fff, 2px 3px 5px rgba(53, 5, 5, 0.4);
+    box-shadow: inset 0 0 0 2px #f53333, inset 0 0 0 4px #fa2f0f, inset 0 0 0 6px #fa4443, inset 0 0 0 8px #fa4442, inset 0 0 0 9px #fa4441, inset 0 0 0 10px #fa4442, inset 0 0 0 11px #fa4441, inset 0 0 0 12px #fa4442, inset 0 0 0 13px #fa4441, inset 0 0 0 14px #fa4442, inset 0 0 0 15px #fa4441, inset 0 0 0 16px #fa4442, inset 0 0 0 17px #fa4441, inset 0 0 0 18px #fa4442, inset 0 0 0 19px #fa4441, inset 0 0 0 20px #fa4442, inset 0 0 0 21px #fa4441, inset 0 0 0 22px #fa4442, inset 0 0 0 23px #fa4441, inset 0 0 0 24px #fa4442, inset 0 0 0 25px #fa4441, inset 0 0 0 26px #fa4442, inset 0 0 0 27px #a13a25, inset 0 0 0 28px #b4321d, inset 0 0 0 29px #cf4428, inset 0 0 0 30px #c52f18, inset 0 0 0 31px #d3391a, inset 0 0 0 32px #dd3920, inset 0 0 0 33px #d3391a, inset 0 0 0 34px #ee3013, inset 0 0 0 35px #ec411f, inset 0 0 0 37px #954747, inset 0 0 0 39px #834238, inset 0 0 0 59px #c73131, inset 0 0 0 67px #e3e3e3, inset 0 0 4px 67px #888, inset 0 0 0 100px #fff, 2px 3px 5px rgba(88, 11, 11, 0.4);
+
+}
+
+.smallplayer .left_icon #lp.spin {
+    width: 160px;
+    height: 160px;
+    background: #fb4949;
+    position: absolute;
+    top: 50%;
+    margin: -80px -70px;
+    border-radius: 50%;
+
+    -webkit-box-shadow: inset 0 0 0 2px #ce7777, inset 0 0 0 4px #fa4442, inset 0 0 0 6px #fa4443, inset 0 0 0 8px #fa4442, inset 0 0 0 9px #fa4441, inset 0 0 0 10px #fa4442, inset 0 0 0 11px #fa4441, inset 0 0 0 12px #fa4442, inset 0 0 0 13px #fa4441, inset 0 0 0 14px #fa4442, inset 0 0 0 15px #fa4441, inset 0 0 0 16px #fa4442, inset 0 0 0 17px #fa4441, inset 0 0 0 18px #fa4442, inset 0 0 0 19px #fa4441, inset 0 0 0 20px #fa4442, inset 0 0 0 21px #fa4441, inset 0 0 0 22px #fa4442, inset 0 0 0 23px #fa4441, inset 0 0 0 24px #fa4442, inset 0 0 0 25px #fa4441, inset 0 0 0 26px #c04633, inset 0 0 0 27px #ce4225, inset 0 0 0 28px #c73b25, inset 0 0 0 29px #c24329, inset 0 0 0 30px #d4442d, inset 0 0 0 31px #c5614d, inset 0 0 0 32px #ee361a, inset 0 0 0 33px #d83313, inset 0 0 0 34px #ee3d22, inset 0 0 0 35px #e25c41, inset 0 0 0 37px #953d3d, inset 0 0 0 39px #d36e5f, inset 0 0 0 59px #ce4444, inset 0 0 0 67px #e3e3e3, inset 0 0 4px 67px #888, inset 0 0 0 100px #fff, 2px 3px 5px rgba(53, 5, 5, 0.4);
+    box-shadow: inset 0 0 0 2px #f53333, inset 0 0 0 4px #fa2f0f, inset 0 0 0 6px #fa4443, inset 0 0 0 8px #fa4442, inset 0 0 0 9px #fa4441, inset 0 0 0 10px #fa4442, inset 0 0 0 11px #fa4441, inset 0 0 0 12px #fa4442, inset 0 0 0 13px #fa4441, inset 0 0 0 14px #fa4442, inset 0 0 0 15px #fa4441, inset 0 0 0 16px #fa4442, inset 0 0 0 17px #fa4441, inset 0 0 0 18px #fa4442, inset 0 0 0 19px #fa4441, inset 0 0 0 20px #fa4442, inset 0 0 0 21px #fa4441, inset 0 0 0 22px #fa4442, inset 0 0 0 23px #fa4441, inset 0 0 0 24px #fa4442, inset 0 0 0 25px #fa4441, inset 0 0 0 26px #fa4442, inset 0 0 0 27px #a13a25, inset 0 0 0 28px #b4321d, inset 0 0 0 29px #cf4428, inset 0 0 0 30px #c52f18, inset 0 0 0 31px #d3391a, inset 0 0 0 32px #dd3920, inset 0 0 0 33px #d3391a, inset 0 0 0 34px #ee3013, inset 0 0 0 35px #ec411f, inset 0 0 0 37px #954747, inset 0 0 0 39px #834238, inset 0 0 0 59px #c73131, inset 0 0 0 67px #e3e3e3, inset 0 0 4px 67px #888, inset 0 0 0 100px #fff, 2px 3px 5px rgba(88, 11, 11, 0.4);
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */
+    /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Content */
+.content main {
+    clear: both;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+.content main .player {
+    /* z-index: 1000000; */
+    position: relative;
+    float: right;
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(0deg, #222, #111);
+    border-radius: 100%;
+    border: solid 2px #000;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2), 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content main .player .fa {
+
+    font-size: 1.2rem;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.content main .player .fa:hover {
+    color: cyan;
+    text-shadow: 0 0 4px cyan;
+}
+
+.content main .player .fa.fa-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88px;
+    height: 88px;
+    border: solid 2px #000;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2), 0 0 8px rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    line-height: 88px;
+    text-align: center;
+    background: linear-gradient(0deg, #111, #222);
+}
+
+.content main .player .fa.fa-pause {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88px;
+    height: 88px;
+    border: solid 2px #000;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2), 0 0 8px rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    line-height: 88px;
+    text-align: center;
+    background: linear-gradient(0deg, #111, #222);
+}
+
+.content main .player .fa.fa-volume-up {
+    font-size: 1.0rem;
+    top: 0%;
+    left: 53%;
+    transform: translateX(-50%);
+}
+
+
+.content main .player .fa.fa-history {
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.content main .player .fa.fa-volume-mute {
+    top: 50%;
+    left: 82%;
+    transform: translateY(-50%);
+}
+
+.content main .player .fa.fa-volume-down {
+    top: 82%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'player';
+    src: url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAARkAA0AAAAABigAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABoAAAAcZi6ZzEdERUYAAAFMAAAAHwAAACAANAAGT1MvMgAAAWwAAABHAAAAVk8P2tRjbWFwAAABtAAAAE4AAAFYCFv1CWdhc3AAAAIEAAAACAAAAAj//wADZ2x5ZgAAAgwAAAC9AAABAD1aCXhoZWFkAAACzAAAADAAAAA2/YRql2hoZWEAAAL8AAAAHgAAACQDav/IaG10eAAAAxwAAAAYAAAAHAb1AB5sb2NhAAADNAAAABAAAAAQAHQAum1heHAAAANEAAAAHQAAACAASgAdbmFtZQAAA2QAAADcAAABd2HwJpJwb3N0AAAEQAAAACIAAAA4TsCevHicY2BgYGQAgpOd+YYg+lzQVF8YDQBAfQX4AAB4nGNgZGBg4ANiCQYQYGJgZGBmYAOSLGAeAwAEpgA7AHicY2Bk7GKcwMDKwMGozGjJwMBgB6WvM4gxFDMwMDGwMjPAAKMAAwIEpLmmMDgw6HxgYGz4f4BBg7GBwaEBqAYkBwBsMAoFAHicY2BgYGaAYBkGRgYQCALyGMF8FgYzIM0BhExgGb0PDP//g1k6MJYARC0bWJQVSLMwMDACeRCjgDRIJxMDKmBE5bKysTAMNwAAdAUHXgAAAAAAAf//AAJ4nHWOPQrCQBCF5212x0AECeQHiygWxtImiZWYA3gCQYg38AjBE9gIlp4hWKTMTfQkq7tJKQ4z78Eb+HgEok+HDjUJIh8LdLpErUsyY39vXFDRlCjmNPezYo4oznsLJuB0Cx55ilk1AkaUWYZIlGScWZrUaaypsTnJjSMG7sxwHwMXRRT6Aa+RrsLesp2JEhQb3H7AOBqKvv4h274vVDiRR7RUQ+FYRQEO+smuy9jzvZVsu7FspUv0BfMMKvsAAAB4nGNgZGBgAGL3LZqc8fw2Xxm4GQ8ARRjOBU31RdD/DzAeYGwAcjkYmECiACC5Cqp4nGNgZGBgbPh/gEGD8QADwz8HIAkUQQHsAIQbBTIAAHicYzzAAAFTIRTjAjCWY0xgYAAALJUDGAAAAAAAAAAAAA4AOgBmAIB4nGNgZGBgYGeQYgDRDAxMQMwIZjuA+QwABZcAaAAAAHicbY4xbsJAEEWfwTiKguhCvRQpbdlOA5QpOAAFvYuVhWTZxEDBOSKlT5dj5AA5AafJ9zJFCna1mjezf/4MMOWTiOFEJMyMRzzwYjxmwbtxLM2X8YQnfowT3auUUfyoyjR0DTyS47PxmDdS41iaD+MJc76NE9V/OdBQccHTw6GpLl5xq7TmHL6G1NfnphJs6Gg5hdhL4XGUZOSKa73/ZrfKUmus9EppCl5l0bWnTdfX3pVZ7tbuNlKwTFdpmReS3F1pF9Ij+7CCk9kwlp3vj/uudUWW32/8AzaYNeR4nGNgYsAP2IGYkYGJkYlBkIGfQYC9NC/TzcDAAAAOAAJpAAA=) format('woff'),
+        url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* breakpoints */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+    .smallplayer {
+        height: 180px;
+    }
+
+    .content main .player {
+        margin-top: 15%;
+        height: 110px;
+        width: 110px;
+    }
+
+    .content main .player .fa {
+
+        font-size: 0.8rem;
+        position: absolute;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .content main .player .fa:hover {
+        color: cyan;
+        text-shadow: 0 0 4px cyan;
+    }
+
+    .content main .player .fa.fa-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border: solid 2px #000;
+        box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2), 0 0 8px rgba(0, 0, 0, 0.6);
+        border-radius: 100%;
+        line-height: 45px;
+        text-align: center;
+        background: linear-gradient(0deg, #111, #222);
+    }
+
+    .content main .player .fa.fa-pause {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border: solid 2px #000;
+        box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2), 0 0 8px rgba(0, 0, 0, 0.6);
+        border-radius: 100%;
+        line-height: 45px;
+        text-align: center;
+        background: linear-gradient(0deg, #111, #222);
+    }
+
+    .content main .player .fa .fa-volume-up {
+
+        top: 0%;
+        left: 53%;
+        transform: translateX(-50%);
+    }
+
+
+    .content main .player .fa.fa-history {
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+    }
+
+    .content main .player .fa.fa-volume-mute {
+        top: 50%;
+        left: 82%;
+        transform: translateY(-50%);
+    }
+
+    .content main .player .fa.fa-volume-down {
+        top: 82%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {}
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {}
+}

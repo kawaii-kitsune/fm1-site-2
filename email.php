@@ -1,4 +1,6 @@
 <?php
+ini_set("sendmail_from", "info@gm1.hmu.gr");
+
 if(isset($_POST['email'])&& $_POST['email']!=""){
     if(filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
         $userName=$_POST['name'];
@@ -7,7 +9,7 @@ if(isset($_POST['email'])&& $_POST['email']!=""){
         $message=$_POST['message'];
 
         $body="";
-        $to="babis-k@outlook.com";
+        $to="babiskolokouris@gmail.com";
 
         $body.="From: ".$userName."\r\n";
         $body.="Email: ".$userEmail."\r\n";

@@ -3,6 +3,8 @@
     border-radius: 2%;
     min-width: 500px;
     min-height: 360px;
+    max-width: 500px;
+    max-height: 360px;
     box-shadow: 0 30px 20px -20px #000;
 
 }
@@ -46,7 +48,7 @@
 }
 
 .player-container main .player {
-    z-index: 1000000;
+    /* z-index: 1000000; */
     position: relative;
     float: right;
     width: 176px;

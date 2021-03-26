@@ -1,40 +1,3 @@
-.company-heading h1 {
-    margin-bottom: 40px;
-    line-height: 80px;
-    color: #fff;
-    font-weight: 700 !important;
-    text-align: center;
-}
-
-.company-heading h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100 !important;
-    text-transform: capitalize;
-    font-size: 65px;
-    margin-bottom: 20px;
-}
-
-.company-sections h2,
-.careers-sections h2,
-.perks-section h2 {
-    font-weight: 800;
-    font-size: 50px;
-}
-
-.company-sections h2,
-.company-sections h3,
-.careers-sections h2 {
-    font-family: 'proxima-nova', sans-serif;
-}
-
-.company-sections h3 {
-    font-size: 25px;
-    font-weight: 700;
-    margin: 14px 0;
-    font-family: 'proxima-nova', sans-serif;
-    text-transform: capitalize;
-}
-
 .red-border {
     width: 50%;
     border-bottom: 1px solid #d2282e;
@@ -49,33 +12,47 @@
     height: 16px;
 }
 
-.ct-u-size22 {
-    font-size: 22px;
+
+
+section#about h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
-.ct-u-fontWeight300 {
-    font-weight: 300;
+section#about p {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
-.marginTop40 {
-    margin-top: 40px !important;
+section#about .card {
+
+    max-height: 500px;
+    overflow-y: scroll;
 }
 
-.ct-u-paddingBoth100 {
-    padding: 100px 15px;
+::-webkit-scrollbar {
+    width: 20px;
 }
 
-.company-sections {
-    text-align: center;
+/* Track */
+::-webkit-scrollbar-track {
+
+    box-shadow: inset 0 0 5px rgba(24, 24, 24, 0.541);
+    border-radius: 50px;
 }
 
-
-.company-sections h2 {
-    font-weight: 800;
-    font-size: 50px;
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-image: url("/assets/concrete-wall-2.png");
+    background: #2e3832;
+    border-radius: 100px;
 }
 
-.company-sections h2,
-.company-sections h3 {
-    font-family: 'proxima-nova', sans-serif;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #85b194;
 }

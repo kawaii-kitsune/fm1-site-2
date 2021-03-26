@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    background-color: #516357;
+    background-color: #7f8874;
     background-image: url("/assets/concrete-wall-2.png");
     margin: 0;
 }
@@ -10,6 +10,18 @@ html {
     margin: 0;
 }
 
+.masthead-small {
+    padding: 6em 0;
+    border-top: transparent;
+
+}
+
+.masthead-small {
+    display: none;
+    align-items: center;
+    /* border-top: transparent; */
+}
+
 #chat-div {
     z-index: 10000;
     position: fixed;
@@ -17,6 +29,7 @@ html {
     bottom: 50%;
 
 }
+
 
 #chat-card {
     z-index: 2;
@@ -100,16 +113,13 @@ h1 {
 
 }
 
-#mainNav {
-    width: 100%;
 
-}
 
 session {
-    top: 0;
     padding-top: 0;
     position: relative;
-    margin: 0;
+
+    width: 100%;
 }
 
 .footer {
@@ -162,21 +172,30 @@ session {
 /* breakpoints */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #cool-text {
+    .masthead {
         display: none;
     }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 749px) {
-    #cool-text {
+    .masthead {
         display: none;
     }
 }
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .masthead {
+        display: none;
+    }
+
+    .masthead-small {
+        display: block;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {

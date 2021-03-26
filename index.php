@@ -15,50 +15,67 @@
     <link rel="stylesheet" href="css/perspective.css">
     <link rel="stylesheet" href="css/aboutUs.css">
     <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="css/smallplayer.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Studio FM1 105.4 Ραδιοφωνικός Σταθμός Ελ.Με.Πα.</title>
 </head>
-<?php
-if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
-    echo "<script>
-            alert('Your mail was send successfully.');
-            </script>
-    ";
-    
-}
 
-?>
 <body id="page-top" onload="test()">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top m-5 mt-0" id="mainNav">
-        <a class="navbar-brand js-scroll-trigger float-right" id="nav-icon" href="#page-top"><img style="width:40%;"
-                src="/assets/STUDIO FM1.png" alt="" /></a>
-        <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark  fixed-top  mb-5 " id="mainNav">
 
-            <button class="navbar-toggler navbar-toggler-right float-end" type="button" data-toggle="collapse"
+        <div class="container mb-5">
+            <a class="navbar-brand" href="#page-top">
+                <img class="logo horizontal-logo" style="width:150%;" src="assets/STUDIO FM1 svg/178x40 svg/2.svg"
+                    alt="forecastr logo">
+            </a>
+            <hr>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class="fas fa-bars ml-1"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+            <div class="collapse navbar-collapse text-center row " id="navbarResponsive">
+                <ul class="navbar-nav navbar-collapse text-uppercase m-auto ">
+                    <li class="navbar nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
             </div>
+
         </div>
+
     </nav>
+    <!-- small_player -->
+    <section class="masthead-small container mt-5 col-12 position-static">
+
+        <div class="player-container2 container mt-5">
+            <main>
+                <div class="container player m-5 position-relative col-12">
+                    <i onclick="SetVolumeDown(0.2)" class="fa fa-volume-down"></i>
+                   
+                    <i id="buttonPlay" class="fa fa-play" onclick="Play()"></i>
+                    <i id="buttonPause" class="fa fa-pause" onclick="Pause()"></i>
+                    <i onclick="SetVolumeUp(0.2)" style="left:45%;top:7%;" class="fa fa-volume-up"></i>
+                    <i onclick="SetVolume(0)" class="fa fa-volume-mute"></i>
+                </div>
+            </main>
+
+        </div>
+
+    </section>
     <!-- Masthead-->
     <header class="masthead row col-12 mt-5">
-        <div id="cool-text" class="wrapper container col-4">
+        <div id="cool-text" class="wrapper container col-4 ">
             <h1 data-heading="LISTEN NOW">LISTEN NOW</h1>
+
         </div>
+
         <!-- --------------player------------------------ -->
         <div class="player-container container col-4 mt-5 bg-dark">
             <header>
@@ -76,24 +93,21 @@ if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
                 <div class="player">
                     <i onclick="SetVolumeDown(0.2)" class="fa fa-volume-down"></i>
                     <i onclick="showHistory()" class="fa fa-history"></i>
-                    <i id="buttonPlay" class="fa fa-play" onclick="Play()"></i>
-                    <i id="buttonPause" class="fa fa-pause" onclick="Pause()"></i>
+                    <i id="buttonPlay1" class="fa fa-play" onclick="Play()"></i>
+                    <i id="buttonPause1" class="fa fa-pause" onclick="Pause()"></i>
                     <i onclick="SetVolumeUp(0.2)" style="left:45%;top:7%;" class="fa fa-volume-up"></i>
                     <i onclick="SetVolume(0)" class="fa fa-volume-mute"></i>
                 </div>
             </main>
             <footer>
                 <div class="title">
-                    <b id="artist">The Vines</b> - <b id="song">Ride</b>
+                    <b id="artist"></b> - <b id="song"></b>
+                    <b id="nextSong">fewfw</b>
                 </div>
                 <div class="time-tracker">
 
                     <ul id="historyList" class="text-muted" id="list">
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
+
                     </ul>
 
 
@@ -164,24 +178,24 @@ if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
     </div>
 
     <!-- About-->
-    <section class="story-section company-sections p-3 text-center" id="about" style="z-index=0;">
+    <section class="row text-center mb-5" id="about">
 
-        <div class="container text-center">
+        <div class="container col-12">
             <h2>
                 ΛΙΓΑ ΛΟΓΙΑ ΓΙΑ ΕΜΑΣ
             </h2>
             <h3>
                 Η απάντηση στο "Γιατί είστε έτσι;"
             </h3>
-            <div class="col-12 ">
+            <div class="container">
                 <div class="red-border">
                     &nbsp;
                 </div>
-                <div class="container m-4 text-center">
-                    <div class="card bg-transparent border-dark">
-                        <div class="card-body">
-                            <h2 style="z-index=0;">Η Ιδέα</h2>
-                            <div class="blueish-border"style="z-index=0;">
+                <div class="container mt-4 ">
+                    <div class="card bg-transparent col-xl-12">
+                        <div class="card-body mostly-customized-scrollbar">
+                            <h2>Η Ιδέα</h2>
+                            <div class="blueish-border">
                                 &nbsp;
                             </div>
                             Στις 18 Σεπτεμβρίου 1989 μια ομαδα σπουδαστών του Τ.Ε.Ι. Ηρακλείου έχοντας την ανάγκη να
@@ -206,8 +220,8 @@ if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
                             διδασκαλίας 60 τ.μ. για τη στέγαση του σταθμού. Η τεχνική υπηρεσία προθυμοποιήθηκε να
                             βοηθήσει στη μελέτη για τη διαμόρφωση του χώρου του Ρ.Σ.
 
-                            <h2 style="z-index=0;">Η συνέχεια:</h2>
-                            <div class="blueish-border"style="z-index=0;">
+                            <h2>Η συνέχεια:</h2>
+                            <div class="blueish-border">
                                 &nbsp;
                             </div>
                             Έτσι η νέα στέγη της ραδιοφωνικής ομάδας γίνεται η αίθουσα 12 της Σ.Ε.Υ.Π. Μέσα εκεί,στον
@@ -220,8 +234,8 @@ if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
                             τη μουσική και την επικοινωνία, ο STUDIO FΜ1 παρέμεινε ζωντανός έχωντας τις βάσεις για την
                             περαιτέρω εξέλιξή του.
 
-                            <h2 style="z-index=0;">Η προσπάθεια:</h2>
-                            <div class="blueish-border" style="z-index=0;">
+                            <h2>Η προσπάθεια:</h2>
+                            <div class="blueish-border">
                                 &nbsp;
                             </div>
                             Η προσπάθεια συνεχίστηκε με αργά αλλά σταθερά βήματα αφού βρήκε και ανταπόκριση απο μεγάλη
@@ -241,8 +255,8 @@ if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
                             Αποκτήθηκε έτσι νέο συστημα εκπομπής με απόδωση σαφώς ανώτερη απο το προηγούμενο και
                             ικανότητα κάλυψης του μεγαλύτερου τμήματος της πόλης. Η προσπάθεια όμως δε σταματάει εδώ.
 
-                            <h2 style="z-index=0;">Σήμερα:</h2>
-                            <div class="blueish-border"style="z-index=0;">
+                            <h2>Σήμερα:</h2>
+                            <div class="blueish-border">
                                 &nbsp;
                             </div>
                             Σήμερα 30 χρόνια μετά, οι προσπάθειες των φοιτητών για καλή και διαφορετική μουσική
@@ -262,13 +276,15 @@ if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
         </div>
 
     </section>
+
     <!-- Contact-->
     <section class="page-section p-3" id="contact">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contact Us</h2>
                 <h3 class="section-subheading text-muted">Στείλε μας ένα email</h3>
-                <hr></hr>
+                <hr>
+                </hr>
             </div>
 
             <form method="POST" action="email.php" id="contactForm">
@@ -286,14 +302,15 @@ if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group mb-md-0">
-                            <input class="form-control" id="subject" name="subject"  type="text" placeholder="Subject *"
+                            <input class="form-control" id="subject" name="subject" type="text" placeholder="Subject *"
                                 required="required" data-validation-required-message="Please enter a Subject." />
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required="required"
+                            <textarea class="form-control" id="message" name="message" placeholder="Your Message *"
+                                required="required"
                                 data-validation-required-message="Please enter a message."></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
@@ -301,7 +318,8 @@ if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
                 </div>
                 <div class="text-center m-4">
                     <div id="success"></div>
-                    <input class="submit" type="submit" name="contact_submitted" value="send >" id="sbmt_button"></input>
+                    <input class="submit" type="submit" name="contact_submitted" value="send >"
+                        id="sbmt_button"></input>
                 </div>
             </form>
         </div>
@@ -311,7 +329,8 @@ if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
     <footer class="footer py-4 bg-white">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-left text-muted">© <text id="year"></text> Copyright Studio Fm1 105.4
+                <div class="col-lg-4 text-lg-left text-muted">© <text id="year" style="font-size: 14px;"></text>
+                    Copyright Studio Fm1 105.4
                     Ραδιοφωνικός
                     Σταθμός
                     Ελ.Mε.Πα
@@ -345,7 +364,7 @@ if(isset($_GET["mail"])&&($_GET["mail"]=='ok')){
     document.getElementById("year").innerText = (new Date().getFullYear());
 </script>
 
-<script src="js/main.js"></script>
+<script src="js/player.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/jazzler.js"></script>
 

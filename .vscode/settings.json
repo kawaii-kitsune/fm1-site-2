@@ -1,3 +1,5 @@
 {
-    "jira-plugin.workingProject": ""
+    "jira-plugin.workingProject": "",
+    "editor.formatOnSave": true,
+    "git.ignoreLimitWarning": true
 }
