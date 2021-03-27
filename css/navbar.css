@@ -1,6 +1,6 @@
 #mainNav {
     min-height: 2.5rem;
-    background-color: rgba(28, 53, 11, 0.863);
+    background-color: rgba(14, 20, 10, 0.863);
 }
 
 #mainNav .navbar-toggler {
@@ -34,16 +34,16 @@
     background-color: transparent;
 }
 
-.navbar .nav-item {
+#mainNav .navbar .nav-item {
     margin-left: 10%;
 
 }
 
-.dropdown-toggle::after {
+#mainNav .dropdown-toggle::after {
     transition: transform 0.15s linear;
 }
 
-.show.dropdown .dropdown-toggle::after {
+#mainNav .show.dropdown .dropdown-toggle::after {
     transform: translateY(3px);
 }
 
@@ -76,29 +76,29 @@
         color: #fff;
     }
 
-    #mainNav.navbar-shrink {
+    #mainNav .navbar-shrink {
         background-color: rgba(51, 44, 44, 0.582);
     }
 
-    #mainNav.navbar-shrink .navbar-brand {
-        color: #000000;
+    #mainNav .navbar-shrink .navbar-brand {
+        color: #141414;
     }
 
-    #mainNav.navbar-shrink .nav-link {
+    #mainNav .navbar-shrink .nav-link {
         color: #ffffff;
         padding: 1.5rem 1.5rem 1.25rem;
         border-bottom: 0.25rem solid transparent;
     }
 
-    #mainNav.navbar-shrink .nav-link:hover {
+    #mainNav .navbar-shrink .nav-link:hover {
         color: #afa658;
     }
 
-    #mainNav.navbar-shrink .nav-link:active {
+    #mainNav .navbar-shrink .nav-link:active {
         color: #afa658;
     }
 
-    #mainNav.navbar-shrink .nav-link.active {
+    #mainNav .navbar-shrink .nav-link.active {
         color: #afa658;
         outline: none;
         border-bottom: 0.25rem solid #afa658;
