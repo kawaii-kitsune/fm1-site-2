@@ -1,26 +1,26 @@
-#mainNav {
+nav {
     min-height: 2.5rem;
     background-color: rgba(14, 20, 10, 0.863);
 }
 
-#mainNav .navbar-toggler {
+nav .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
     color: #ffffff;
     border: 1px solid #ffffff;
 }
 
-#mainNav .navbar-toggler:focus {
+nav .navbar-toggler:focus {
     outline: none;
 }
 
-#mainNav .navbar-brand {
+nav .navbar-brand {
     color: #000000;
     font-weight: 700;
     padding: 0.9rem 0;
 }
 
-#mainNav .navbar-nav .nav-item:hover {
+nav .navbar-nav .nav-item:hover {
     color: fade(#fff, 80%);
     outline: none;
     background-color: transparent;
@@ -28,28 +28,28 @@
 
 
 
-#mainNav .navbar-nav .nav-item:active,
-#mainNav .navbar-nav .nav-item:focus {
+nav .navbar-nav .nav-item:active,
+nav .navbar-nav .nav-item:focus {
     outline: none;
     background-color: transparent;
 }
 
-#mainNav .navbar .nav-item {
-    margin-left: 10%;
+nav .navbar .nav-item {
+    margin: 10%;
 
 }
 
-#mainNav .dropdown-toggle::after {
+nav .dropdown-toggle::after {
     transition: transform 0.15s linear;
 }
 
-#mainNav .show.dropdown .dropdown-toggle::after {
+nav .show.dropdown .dropdown-toggle::after {
     transform: translateY(3px);
 }
 
 
 @media (min-width: 992px) {
-    #mainNav {
+    nav {
         padding-top: 0;
         padding-bottom: 0;
         border-bottom: none;
@@ -57,48 +57,48 @@
         transition: background-color 0.3s ease-in-out;
     }
 
-    #mainNav .navbar-brand {
+    nav .navbar-brand {
         padding: 0.5rem 0;
         color: rgba(255, 255, 255, 0.5);
     }
 
-    #mainNav .nav-link {
+    nav .nav-link {
         transition: none;
         padding: 2rem 1.5rem;
         color: rgba(255, 255, 255, 0.5);
     }
 
-    #mainNav .nav-link:hover {
+    nav .nav-link:hover {
         color: rgba(255, 255, 255, 0.75);
     }
 
-    #mainNav .nav-link:active {
+    nav .nav-link:active {
         color: #fff;
     }
 
-    #mainNav .navbar-shrink {
+    nav .navbar-shrink {
         background-color: rgba(51, 44, 44, 0.582);
     }
 
-    #mainNav .navbar-shrink .navbar-brand {
+    nav .navbar-shrink .navbar-brand {
         color: #141414;
     }
 
-    #mainNav .navbar-shrink .nav-link {
+    nav .navbar-shrink .nav-link {
         color: #ffffff;
         padding: 1.5rem 1.5rem 1.25rem;
         border-bottom: 0.25rem solid transparent;
     }
 
-    #mainNav .navbar-shrink .nav-link:hover {
+    nav .navbar-shrink .nav-link:hover {
         color: #afa658;
     }
 
-    #mainNav .navbar-shrink .nav-link:active {
+    nav .navbar-shrink .nav-link:active {
         color: #afa658;
     }
 
-    #mainNav .navbar-shrink .nav-link.active {
+    nav .navbar-shrink .nav-link.active {
         color: #afa658;
         outline: none;
         border-bottom: 0.25rem solid #afa658;
